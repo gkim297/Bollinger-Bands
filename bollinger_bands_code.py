@@ -8,7 +8,7 @@ def bollinger_band_plot(ticker, startDate, endDate, MA_Period=20, stdev_default=
     :return: plot
     """
     
-    #make sure to copy, paste outside of this function, and remove this portion before running your code.
+    #make sure to copy, paste outside of this function, and remove before running your code.
     import numpy as np
     import matplotlib.pyplot as plt
     import warnings
