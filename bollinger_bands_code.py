@@ -7,6 +7,8 @@ def bollinger_band_plot(ticker, startDate, endDate, MA_Period=20, stdev_default=
     :param stdev_default: number of standard deviation in default
     :return: plot
     """
+    
+    #make sure to copy, paste outside of this function, and remove this portion before running your code.
     import numpy as np
     import matplotlib.pyplot as plt
     import warnings
@@ -16,7 +18,8 @@ def bollinger_band_plot(ticker, startDate, endDate, MA_Period=20, stdev_default=
     from pandas_datareader import data as pdr
     import yfinance as yfin
     yfin.pdr_override()
-
+    ####################
+    
     stockDF = pdr.get_data_yahoo({ticker}, start={startDate}, end={endDate})['Close']
     stockDF.columns = {'Close Price'}
     stockDF.head()
